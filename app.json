@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "grupo5-cell-phone",
+    "slug": "grupo5-cell-phone",
+    "version": "1.0.0",
+    "scheme":"grupo5NT2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundelIdentifier": "com.cellphone.grupo5",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.cellphone.grupo5",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
