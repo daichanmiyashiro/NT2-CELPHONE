@@ -31,19 +31,19 @@ export default function Home() {
       id: 2,
       img: SucursalMercedesImg,
       place: 'Sucursal belgrano',
-      phone: '17288381',
+      phone: '1532883813',
     },
     {
       id: 3,
       img: PhoneUnoImg,
-      place: 'Sucursal',
-      phone: '11111',
+      place: 'Sucursal Caballito',
+      phone: '1562485833',
     },
     {
       id: 4,
       img: PhoneDosImg,
-      place: 'Sucursal',
-      phone: '11111',
+      place: 'Sucursal Colonia',
+      phone: '0125 125421452',
     },
   ];
 
