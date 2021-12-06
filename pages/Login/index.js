@@ -22,7 +22,7 @@ export default function Login() {
 
   const [request, response, promptAsync] = Google.useAuthRequest({
     expoClientId:'852659492357-2iml7hpfv1ado295t4abqli8oko04kep.apps.googleusercontent.com',
-    iosClientId:'923761599304-41hkeh1v3umtl2ntm5vht4j8ld9ch2sv.apps.googleusercontent.com',
+      iosClientId:'923761599304-41hkeh1v3umtl2ntm5vht4j8ld9ch2sv.apps.googleusercontent.com',
     androidClientId: 'GOOGLE_GUID.apps.googleusercontent.com',
     webClientId: 'GOOGLE_GUID.apps.googleusercontent.com',
   });
@@ -39,8 +39,9 @@ export default function Login() {
       )
         .then(res => res.json())
         .then(data => {
-          const {name, email} = data;
-          setDataAuth({...DataAuth, name, email});
+          const {name, email,id} = data;
+          setDataAuth({...DataAuth, name, email,id});
+		  console.log(data);
         });
     }
   }, [response]);

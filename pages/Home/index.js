@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react';
+import Globalcontext from '../../components/context';
 import {
   ScrollView,
   Text,
@@ -20,11 +21,12 @@ import PhoneUnoImg from '../../assets/phoneUno.png';
 import PhoneDosImg from '../../assets/phoneDos.png';
 
 export default function Home() {
+  const { DataAuth, setDataAuth } = useContext(Globalcontext);
   const sucursales = [
     {
       id: 1,
       img: SucursalColoniaImg,
-      place: 'Sucursal palermo',
+      place: 'Sucursal Colonia',
       phone: '1539392939',
     },
     {
@@ -42,7 +44,7 @@ export default function Home() {
     {
       id: 4,
       img: PhoneDosImg,
-      place: 'Sucursal Colonia',
+      place: 'Sucursal Palermo',
       phone: '0125 125421452',
     },
   ];

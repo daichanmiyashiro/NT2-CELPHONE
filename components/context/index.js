@@ -1,6 +1,7 @@
 import React from "react";
 
 const authData = {
+    id:"",
     token: "Vacio",
     email: "",
     password: "",
