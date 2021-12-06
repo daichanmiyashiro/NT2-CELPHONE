@@ -46,7 +46,7 @@ export default ({ navigation }) => {
       redirect: 'follow'
     };
 
-    fetch(`http://181.46.66.115:3000/api/reservations/user/${DataAuth.id}`, requestOptions)
+    fetch(`${Constants.BASE_URL}/reservations/user/${DataAuth.id}`, requestOptions)
       .then(response => response.json())
       .then((data) => {
         setReservas(data)
